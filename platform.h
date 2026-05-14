@@ -210,3 +210,10 @@ typedef struct PlatformAPI {
      * @param out   読み込み先バッファ
      * @param size  バッファサイズ（バイト）
      * @return 実際に読み込んだバイト数（0 = データなし）
+     */
+    uint32_t (*save_read)(struct PlatformAPI *api,
+                          void *out, uint32_t size);
+
+} PlatformAPI;
+
+#endif /* PLATFORM_H */
